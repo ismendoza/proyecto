@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ServiciosWebService } from './servicios-web.service';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
@@ -19,7 +20,8 @@ import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup} from '@angula
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
 
     
   ],
