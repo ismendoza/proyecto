@@ -4,12 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegistroClienteComponent } from './registro-cliente/registro-cliente.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes =[
 
-  { path: '', component: InicioComponent},
-  { path: 'login', component: LoginComponent },
-  { path: 'registroCliente', component: RegistroClienteComponent }
+  { path: '', component: LoginComponent, pathMatch: 'full'},
+  { path: 'inicio', component: InicioComponent },
+  { path: 'registroCliente', canActivate: [AuthGuard], component: RegistroClienteComponent }
   
   
   

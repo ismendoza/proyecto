@@ -1,3 +1,19 @@
-<p>
-  login works!
-</p>
+<mat-card class="card">
+  <mat-card-title>Iniciar Sesión</mat-card-title>
+  <form class="example-form" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-group">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Usuario" value="" formControlName="usuario">
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="password"  [type]="'password'" formControlName="password">
+      </mat-form-field>
+    </div>
+    
+    <button mat-raised-button color="primary" type="submit">Entrar</button>
+  </form>
+
+</mat-card>
