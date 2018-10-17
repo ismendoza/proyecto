@@ -1,0 +1,19 @@
+
+.login-spacer {
+    flex: 1 1 auto;
+  }
+
+.titulo{
+  background-color:mediumaquamarine;
+  
+}
+
+  p{
+    margin: 0 auto;
+    padding: 0%;
+    text-align: center;
+    color: white;
+    font-family: 'Kalam', cursive;
+    font-size: 23px;
+
+}

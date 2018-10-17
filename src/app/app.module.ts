@@ -21,12 +21,18 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { RegistroClienteComponent } from './registro-cliente/registro-cliente.component';
+import { LoginComponent } from './login/login.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegistroClienteComponent,
+    LoginComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
