@@ -5,12 +5,13 @@ import { RegistroClienteComponent } from './registro-cliente/registro-cliente.co
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { AuthGuard } from './auth.guard';
+import { AppComponent } from './app.component';
 
 const routes: Routes =[
-
-  { path: '', component: LoginComponent, pathMatch: 'full'},
-  { path: 'inicio', component: InicioComponent },
-  { path: 'registroCliente', canActivate: [AuthGuard], component: RegistroClienteComponent }
+  //{ path: '', component: AppComponent,pathMatch: 'full'},
+  { path: 'login', component: LoginComponent},
+  { path: 'inicio', component: InicioComponent, canActivate:[AuthGuard] },
+  { path: 'registroCliente', component: RegistroClienteComponent }
   
   
   

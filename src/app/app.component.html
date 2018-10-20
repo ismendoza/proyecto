@@ -1,19 +1,28 @@
 <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
 
-<div class="titulo">
-        <p>{{titulo}}</p>
-</div>
-<mat-toolbar color="primary" *ngIf="authService.isLoggedIn">
-    <mat-toolbar-row>
-        <button mat-button routerLink="/">Inicio</button>
-        <button mat-button routerLink="/registroCliente">Registrar Cliente</button>
-        <span class="login-spacer"></span>
-        <!--<button mat-button routerLink="/login"><mat-icon>account_box</mat-icon></button>-->
-        <button mat-button (click) ="logout()" >Salir</button>
+<mat-toolbar color="primary">
+        <mat-toolbar-row>
+                <span class="titulonav">Finca La Primavera</span>
+        </mat-toolbar-row>
+        <mat-toolbar-row  *ngIf="isLoggedIn2$ | async as isLoggedIn2">
+                <button mat-button routerLink="/registroCliente">Registrar Cliente</button>
+                <button mat-button routerLink="/registroCliente">Nosotros</button>
+                <button mat-button routerLink="/registroCliente">Contacto</button>
+                <button mat-button routerLink="/login">
+                        <mat-icon>account_box</mat-icon>
+                </button>
+        </mat-toolbar-row>
 
-</mat-toolbar-row>
+        <mat-toolbar-row *ngIf="isLoggedIn$ | async as isLoggedIn">
+                <button mat-button routerLink="/">Inicio</button>
+                <button mat-button routerLink="/registroCliente">Hacer Pedido</button>
+                <span class="login-spacer"></span>
+                <!--<button mat-button routerLink="/login"><mat-icon>account_box</mat-icon></button>-->
+                <button mat-button (click)="logout()">Salir</button>
+        </mat-toolbar-row>
 
 
 </mat-toolbar>
+
 
 <router-outlet></router-outlet>
