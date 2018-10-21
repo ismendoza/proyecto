@@ -1,0 +1,50 @@
+<form [formGroup]="crearEmpleadoForm" (ngSubmit)="submit(crearEmpleadoForm.value)">
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nombre" value="" formControlName="nombre">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Apellido" value="" formControlName="apellido">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dirección" formControlName="direccion">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="No. DPI" formControlName="dpi">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="NIT" formControlName="nit">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="No. licencia" formControlName="licencia">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="No. teléfono" formControlName="telefono">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field>
+      <mat-select placeholder="Tipo de empleado" formControlName="tipoEmpleado">
+        <mat-option *ngFor="let t of tiposEmpleado" [value]="t.codigo_tipo_empleado">
+          {{t.tipo_empleado}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" type="submit">Crear empleado</button>
+</form>
+
+

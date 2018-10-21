@@ -21,9 +21,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { RegistroClienteComponent } from './registro-cliente/registro-cliente.component';
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
 
 
 
@@ -32,7 +34,8 @@ import { InicioComponent } from './inicio/inicio.component';
     AppComponent,
     RegistroClienteComponent,
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    CrearEmpleadoComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,8 @@ import { InicioComponent } from './inicio/inicio.component';
     MatIconModule,
     MatCardModule,
     MatDatepickerModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSnackBarModule
     
 
     
