@@ -12,7 +12,8 @@ export class AuthService {
   private loggedIn = new BehaviorSubject<boolean>(false);
   private loggedIn2= new BehaviorSubject<boolean>(true);
   username: string;
-  UrlCheckUser = 'http://localhost:7799/ServiciosWeb/checkUser.php/';
+  //UrlCheckUser = 'http://localhost:7799/ServiciosWeb/checkUser.php/';
+  UrlCheckUser = 'http://localhost:7788/checkUser';
   constructor(private http: HttpClient, private router: Router) { }
 
   log(usuario, password){

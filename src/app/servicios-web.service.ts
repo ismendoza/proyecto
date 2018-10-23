@@ -21,6 +21,6 @@ crearEmpleado(formulario){
     console.log(formulario);
     return this.http.post(this.UrlGuradarEmpleado, formulario);
   }
-}
+
 
 }
