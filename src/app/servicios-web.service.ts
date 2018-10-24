@@ -9,7 +9,7 @@ import { TipoEmpleado } from './modelos';
 export class ServiciosWebService {
 
 UrlTipoEmpleado = 'http://localhost:7799/serviciosweb/tipo_empleado.php/';
-UrlGuradarEmpleado = 'http://localhost:7799/serviciosweb/guardarEmpleado.php/';
+UrlGuradarEmpleado = 'http://localhost:7788/empleado';
   constructor(private http: HttpClient) { }
 
 //Obtiene lista de tipos de empleado

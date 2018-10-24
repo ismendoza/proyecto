@@ -37,12 +37,16 @@ export class CrearEmpleadoComponent implements OnInit {
     console.log(formulario);
       this.servicios.crearEmpleado(formulario).subscribe(
         response=>{
-          this.respuesta = response['respuesta'];
+          //this.respuesta = response['respuesta'];
+          this.respuesta = "Se ha creado el empleado";
          
-          if(this.respuesta == "Se ha creado el registro"){
+          if(response['respuesta'] == true){
             console.log(response['respuesta']);
             alert(this.respuesta);
             this.crearEmpleadoForm.reset();
+          }
+          else{
+            alert("No se ha podido crear el empleado");
           }
           console.log(response);
           
