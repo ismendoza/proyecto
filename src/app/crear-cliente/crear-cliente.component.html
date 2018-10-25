@@ -1,0 +1,44 @@
+<h3>Crear Cliente</h3>
+<form [formGroup]="crearClienteForm" (ngSubmit)="submit(crearClienteForm.value)">
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nombre" value="" formControlName="nombre">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Apellido" value="" formControlName="apellido">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dirección" formControlName="direccion">
+    </mat-form-field>
+  </div>
+
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="NIT" formControlName="nit">
+    </mat-form-field>
+  </div>
+ 
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="No. teléfono" formControlName="telefono">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="E-mail" formControlName="email">
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="empresa" formControlName="empresa">
+    </mat-form-field>
+  </div>
+  <button mat-raised-button color="primary" type="submit">Crear cliente</button>
+</form>
+
+

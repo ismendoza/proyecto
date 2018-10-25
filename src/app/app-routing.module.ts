@@ -8,6 +8,7 @@ import { AuthGuard } from './auth.guard';
 import { AppComponent } from './app.component';
 import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
 import { ProductoComponent } from './producto/producto.component';
+import { CrearClienteComponent } from './crear-cliente/crear-cliente.component';
 
 const routes: Routes =[
   //{ path: '', component: AppComponent,pathMatch: 'full'},
@@ -15,7 +16,8 @@ const routes: Routes =[
   { path: 'inicio', component: InicioComponent, canActivate:[AuthGuard] },
   { path: 'registroCliente', component: RegistroClienteComponent },
   { path: 'crearempleado', component: CrearEmpleadoComponent, canActivate:[AuthGuard] },
-  { path: 'crearproducto', component: ProductoComponent, canActivate:[AuthGuard]}
+  { path: 'crearproducto', component: ProductoComponent, canActivate:[AuthGuard]},
+  { path: 'crearcliente', component: CrearClienteComponent, canActivate:[AuthGuard]}
   
   
   

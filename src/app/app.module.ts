@@ -27,6 +27,7 @@ import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
 import { ProductoComponent } from './producto/producto.component';
+import { CrearClienteComponent } from './crear-cliente/crear-cliente.component';
 
 
 
@@ -37,7 +38,8 @@ import { ProductoComponent } from './producto/producto.component';
     LoginComponent,
     InicioComponent,
     CrearEmpleadoComponent,
-    ProductoComponent
+    ProductoComponent,
+    CrearClienteComponent
   ],
   imports: [
     BrowserModule,
