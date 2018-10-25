@@ -10,6 +10,7 @@ export class ServiciosWebService {
 
 UrlTipoEmpleado = 'http://localhost:7799/serviciosweb/tipo_empleado.php/';
 UrlGuradarEmpleado = 'http://localhost:7788/empleado';
+UrlGuradarProducto = 'http://localhost:7788/producto';
   constructor(private http: HttpClient) { }
 
 //Obtiene lista de tipos de empleado
@@ -21,6 +22,9 @@ crearEmpleado(formulario){
     console.log(formulario);
     return this.http.post(this.UrlGuradarEmpleado, formulario);
   }
-
+  crearProducto(formulario){
+    console.log(formulario);
+    return this.http.post(this.UrlGuradarProducto, formulario);
+  }
 
 }

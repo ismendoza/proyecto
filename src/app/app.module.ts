@@ -26,6 +26,7 @@ import { RegistroClienteComponent } from './registro-cliente/registro-cliente.co
 import { LoginComponent } from './login/login.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.component';
+import { ProductoComponent } from './producto/producto.component';
 
 
 
@@ -35,7 +36,8 @@ import { CrearEmpleadoComponent } from './crear-empleado/crear-empleado.componen
     RegistroClienteComponent,
     LoginComponent,
     InicioComponent,
-    CrearEmpleadoComponent
+    CrearEmpleadoComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,

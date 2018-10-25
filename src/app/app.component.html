@@ -16,6 +16,7 @@
         <mat-toolbar-row *ngIf="isLoggedIn$ | async as isLoggedIn">
                 <button mat-button routerLink="/">Inicio</button>
                 <button mat-button routerLink="/crearempleado">Crear Empleado</button>
+                <button mat-button routerLink="/crearproducto">Crear Producto</button>
                 <span class="login-spacer"></span>
                 <!--<button mat-button routerLink="/login"><mat-icon>account_box</mat-icon></button>-->
                 <button mat-button (click)="logout()">Salir</button>

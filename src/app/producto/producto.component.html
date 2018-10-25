@@ -1,0 +1,13 @@
+<h3>Crear Producto</h3>
+<form [formGroup]="crearProductoForm" (ngSubmit)="submit(crearProductoForm.value)">
+  <div class="form-group">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Nombre del producto" value="" formControlName="descripcion">
+    </mat-form-field>
+  </div>
+
+ 
+  <button mat-raised-button color="primary" type="submit">Crear producto</button>
+</form>
+
+
